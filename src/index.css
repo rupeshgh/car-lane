@@ -1,0 +1,121 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+.game__section {
+	width: 100%;
+	height: 100vh;
+	/* position: relative; */
+	outline: 1px solid red;
+}
+.playmenu {
+	/* display: none; */
+	/* position: absolute; */
+	width: 100%;
+	height: 100vh;
+	background: rgb(42, 21, 95);
+	padding: 180px;
+	/* z-index: 1; */
+}
+
+.play__info {
+	max-width: 800px;
+	height: 220px;
+	margin: auto;
+	text-align: center;
+	border-radius: 30px;
+	background: aqua;
+}
+.info {
+	margin-top: 30px;
+	font-size: 40px;
+}
+.para {
+	color: gray;
+}
+
+.play {
+	margin-top: 20px;
+	width: 300px;
+	height: 50px;
+	border: none;
+	border-radius: 20px;
+	font-size: 36px;
+	font: bold;
+}
+.overmenu {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background: rgb(42, 21, 95);
+	padding: 180px;
+	outline: 1px solid red;
+}
+
+.game__container {
+	position: absolute;
+	/* display: none; */
+	position: relative;
+	height: 100vh;
+	width: 800px;
+	margin: 0 auto;
+	/* outline: 1px solid red; */
+	position: relative;
+	background-image: url("./../assets/images/road.png");
+	background-repeat: repeat-y;
+	animation: animatedRoad 2s linear infinite;
+	overflow: hidden;
+}
+
+.score {
+	position: absolute;
+	right: 0;
+	height: 40px;
+	font-size: 50px;
+}
+
+@keyframes animatedRoad {
+	0% {
+		background-position: 0 0;
+	}
+	100% {
+		background-position: 0 500px;
+	}
+}
+
+.player {
+	width: 100%;
+	/* outline: 1px solid red; */
+	position: absolute;
+	height: 180px;
+	bottom: 0;
+}
+
+.player__car {
+	position: absolute;
+	width: 250px;
+	height: 180px;
+	object-fit: contain;
+	left: 0px;
+	/* outline: 1px solid red; */
+}
+.player__pos {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	/* outline: 1px solid green; */
+}
+
+.enemyCar {
+	width: 250px;
+	height: 180px;
+	/* outline: 1px solid blue; */
+}
+
+.score_class {
+	font-size: 50px;
+}

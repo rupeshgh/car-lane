@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./src/index.css" />
+		<title>Car game</title>
+	</head>
+	<body>
+		<div class="game__section">
+			<div class="playmenu">
+				<div class="play__info">
+					<p class="left info para">Press A or arrow left to move left.</p>
+					<p class="right info para">Press D or arrow right to move right.</p>
+					<button class="play__btn play">
+						Click to Play
+					</button>
+				</div>
+			</div>
+			<div class="game__container">
+				<div class="score">Score:</div>
+				<div class="enemy__car"></div>
+				<div class="player">
+					<div class="player__pos">
+						<img class="player__car" src="./assets/images/hero.png" alt="" />
+					</div>
+				</div>
+			</div>
+			<div class="overmenu">
+				<div class="play__info">
+					
+					<p class="right info para">Game over</p>
+					<p class="score_class"></p>
+					<button style="width: 420px;"class="over__btn play play_again">Click to Play Again</button>
+				</div>
+		</div>
+	</body>
+	<script src="./src/constant.js"></script>
+	<script src="./src/util.js"></script>
+	<script src="./src/enemy.js"></script>
+	<script src="./src/index.js"></script>
+</html>
